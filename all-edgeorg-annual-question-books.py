@@ -11,6 +11,7 @@ import threading
 
 common_toc_xpath1 = '//*[contains(concat(" ", @class, " "), " response-title ")]/h:span'
 common_toc_xpath2 = '//*[contains(concat(" ", @class, " "), " response ")]//*/h:div[@class="field-content"]/h:p[1]'
+common_toc_xpath3 = '//*[contains(concat(" ", @class, " "), " response ")]//*/h:div[@class="field-content"]/h:div'
 
 data = (
     ('1998',
@@ -117,6 +118,11 @@ data = (
      'What scientific term or concept ought to be more widely known?',
      'https://www.edge.org/responses/what-scientific-term-or%C2%A0concept-ought-to-be-more-widely-known',
      common_toc_xpath1
+     ),
+     ('2018',
+     'What is the last question?',
+     'https://www.edge.org/responses/what-is-the-last-question',
+     common_toc_xpath3
      ),
     )
 
